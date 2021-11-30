@@ -1,18 +1,9 @@
 @import "~bootstrap/scss/bootstrap";
 
 body {
-    background-color: rgb(154, 163, 230);
+    background-color: white;
 }
 
-$pink: #f533f2;
-$purple: #a72cd4;
-$darkpurple: #8e3deb;
-$blue: #4e2cd4;
-$royalblue: #3344f5;
-$theme-colors: (
-    "pink": $pink,
-    "purple": $purple,
-    "darkpurple": $darkpurple,
-    "blue": $blue,
-    "royalblue": $royalblue
-);
+.navbar-default {
+    background-color: #8e3deb;
+}
