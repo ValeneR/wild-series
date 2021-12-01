@@ -45,7 +45,7 @@ Class CategoryController extends AbstractController
 
         if (!$category) {
             throw $this->createNotFoundException(
-                'No program with this category : '.$categoryName.' found in category\'s table.'
+                'Cette cétgorie n\'existe pas.'
             );
         }
         else {
