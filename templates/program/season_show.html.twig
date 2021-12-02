@@ -6,13 +6,13 @@
     <div class="media">
             <p>{{ season.description }}</p>
             {% for episode in episodes %}
-                <p>{{ episode.number }} - {{ episode.title }}</p>
+                <a href="{{ path('program_episode_show',{programId: season.program.id, seasonId: season.id, episodeId: episode.id }) }}">{{ episode.number }} - {{ episode.title }}</a>
                 <p>{{ episode.synopsis }}</p>
             {% endfor %}
         </div>
     </div>
 
-    <a href="{{ path('program_show') }}">
-        Retour à la série
+    <a href="{{ path('program_index') }}">
+        Retour à la liste des séries
     </a>
 {% endblock %}
