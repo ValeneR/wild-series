@@ -18,7 +18,7 @@ class ProgramType extends AbstractType
             ->add('poster', TextType::class)
             ->add('country', TextType::class)
             ->add('year', TextType::class)
-            ->add('category', TextType::class)
+            ->add('category', null, ['choice_label' => 'name'])
         ;
     }
 

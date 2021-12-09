@@ -66,7 +66,7 @@ Class CategoryController extends AbstractController
     /**
      * The controller for the category add form
      *
-     * @Route("/new", name="new")
+     * @Route("/new", name="new", priority="1")
      */
     public function new(Request $request) : Response
     {
