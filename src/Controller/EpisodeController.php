@@ -3,6 +3,8 @@
 namespace App\Controller;
 
 use App\Entity\Episode;
+use App\Entity\Program;
+use App\Entity\Season;
 use App\Form\EpisodeType;
 use App\Repository\EpisodeRepository;
 use Doctrine\ORM\EntityManagerInterface;
